@@ -5,7 +5,7 @@ var db  = mongoose.connect(Config.mongo_url);
 var Schema = mongoose.Schema;
 
 module.exports = {
-  mongoose:mongoose,
+  mongoose: mongoose,
   db: db,
   Schema: Schema
 }

@@ -2,6 +2,8 @@
 
 var index = require('./index');
 
+var category = require('./products/category')
+
 var routes = module.exports = function(app) {
 
   // 监控
@@ -10,7 +12,12 @@ var routes = module.exports = function(app) {
   });
 
 
-
+  /***********************************************************
+   *
+   *  商品
+   *
+   ***********************************************************/
+  app.use('/', [category])
 
 
 }
